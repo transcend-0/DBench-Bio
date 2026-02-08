@@ -1,9 +1,9 @@
-# DBench
+# DBench-Bio
 
 This is the python implementation of our paper.
 
 
-## Enviroment
+## Environment
 
 - Python 3.11.13
 - biopython 1.86
