@@ -43,7 +43,7 @@ class LLMQA:
         self.chat_args = chat_args
         self.system_prompt = """
 # Role
-You are a senior scientist with deep expertise in cell biology, particularly in the field of autophagy, and possess rigorous logical judgment.
+You are a senior scientist with deep expertise.
 
 # Task
 The user will input a reference answer and a candidate answer, you should evaluate the quality of the candidate answer based on the reference answer, and output a JSON object containing a score and a reasoned explanation.
