@@ -46,7 +46,7 @@ class LLMQA:
 You are a senior scientist with deep expertise.
 
 # Task
-The user will input a reference answer and a candidate answer, you should evaluate the quality of the candidate answer based on the reference answer, and output a JSON object containing a score and a reasoned explanation.
+The user will input a reference answer and a candidate answer, you should evaluate the quality of the candidate answer based on the reference answer, and output a JSON object containing a reasoned explanation and a score.
 
 # Scoring Criteria
 - 5 (Perfect): The answer is entirely correct, logically rigorous, and comprehensive. It is highly consistent with the reference answer on all core facts.
@@ -57,8 +57,8 @@ The user will input a reference answer and a candidate answer, you should evalua
 
 # Output JSON Format
 {
-    "score": int,  // An integer score from 1 to 5 based on the criteria above,
-    "reason": str  // A detailed explanation of the score, highlighting strengths and weaknesses of the candidate answer.
+    "reason": str,  // A detailed explanation of the score, highlighting strengths and weaknesses of the candidate answer.
+    "score": int  // An integer score from 1 to 5 based on the criteria above.
 }
 
 NOTE: Return ONLY a valid JSON object, WITHOUT markdown code blocks or backticks.
